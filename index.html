@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <i class="material-icons">favorite_border</i>
+            <span>Now playing</span>
+            <i class="material-icons">add</i>
+        </div>
+        <div class="img-area">
+            <img src="images/shapeofyou.jpg"  alt="images">
+        </div>
+    
+<div class="song-details">
+    <p class="name">ed sheeran - shape of you</p>
+    <p class="artist">ed sheeran</p>
+</div>
+<div class="progress-area">
+    <div class="progress-bar">
+        <audio id="main.audio">
+        <source src="C:\Users\HP\Desktop\music palyer\songs\shapeofyou.mp3"></audio>
+    </div>
+    <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+    </div>
+    <audio id="main-audio">
+    <source src="C:\Users\HP\Desktop\music palyer\songs.mp3"></audio>
+</div>
+<div class="controls">
+    <i id="repeat-plist" class="material-icons" title="playlist looped">repeat</i>
+    <i id="prev" class="material-icons prev">fast_rewind</i>
+
+    <div class="play-pause">
+        <i id="play" class="material-icons">play_arrow</i>
+    </div>
+    
+    <i id="next" class="material-icons next">fast_forward</i>
+    <i id="more - music" class="material-icons">queue_music</i>
+</div>
+<div class="music-list">
+    <div class="header">
+        <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span> music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+    </div>
+    <ul>
+        <li>
+            <div class="row">
+                <span>cartoon - on&on</span>
+                <p>cartoon</p>
+            </div>
+            <span class="audio-duration">3:27</span>
+        </li>
+        <li>
+            <div class="row">
+                <span>ed sheeran - shape of you</span>
+                <p>ed sheeran</p>
+            </div>
+            <span class="audio-duration">1:45</span>
+        </li>
+        <li>
+            <div class="row">
+                <span>Ikson Anywhere - Ikson</span>
+                <p>jordan Schor</p>
+            </div>
+            <span class="audio-duration">1:45</span>
+        </li>
+        <li>
+            <div class="row">
+                <span>Beauz & Jvna - crazy</span>
+                <p>Beauz & Jvna</p>
+            </div>
+            <span class="audio-duration">1:45</span>
+        </li>
+        <li>
+            <div class="row">
+                <span>Jim - Sun Goes Down
+                </span>
+                <p>Jim Yosef x Roy</p>
+            </div>
+            <span class="audio-duration">1:45</span>
+        </li>
+    </ul>
+</div>
+    </div>
+
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
